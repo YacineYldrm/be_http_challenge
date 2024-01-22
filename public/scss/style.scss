@@ -1,0 +1,85 @@
+body{
+    background: url("https://images.unsplash.com/photo-1547371919-65ee7135e126?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center / cover no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    overflow-y: hidden;
+    padding: 8vh 5%;
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        
+        div{
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.409);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.443);
+            h1{
+                // width: fit-content;
+                font-size: 48px;
+                text-align: center;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        a{
+            background-color: yellow;
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+
+        }
+    }
+
+    article{
+        background-color: rgba(0, 0, 0, 0.409);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 80px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.443);
+        
+            ul{
+                display: flex;
+                gap: 70px;
+                overflow-y: hidden;
+                width: 90%;
+                height: auto;
+                scrollbar-width: thin;
+                scrollbar-color: transparent transparent;
+                scroll-behavior: smooth;
+                &::-webkit-scrollbar {
+                        width: 8px;
+                    }
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent;
+                }
+               
+            li{
+                text-align: center;
+                list-style: none;
+                font-size: 28px;
+                
+            }              
+    }
+    }
+        
+}
